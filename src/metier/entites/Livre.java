@@ -7,14 +7,14 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="Livre")
+@Table(name="livre")
 
 public class Livre {
 
 	@Id 
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-
-	private int id; 
+	private int id;
+	
 	private String description; 
 	private int quantite ;
 	public int getId() {
